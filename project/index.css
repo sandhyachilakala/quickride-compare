@@ -1,0 +1,238 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy', 'Segoe UI', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+}
+
+
+#header {
+  height: 8%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightblue;
+  padding: 10px 10px;
+}
+
+#logo {
+  height: 80%;
+  width: 10%;
+}
+
+#logo img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid aqua;
+}
+
+#text h1 {
+  font-size: 40px;
+  color: #004466;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#contactdetails {
+  text-align: center;
+  font-size: 20px;
+  color: #222;
+}
+#contactdetails.hover{
+    background: rgb(8, 78, 8);
+}
+
+.icon {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  color: #000;
+}
+
+.icon:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.1);
+  color: #007bff;
+}
+
+#login {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  
+}
+
+#login:hover {
+  background-color:rgb(8, 78, 8);
+  color: white;
+}
+
+#try {
+  background-color: rgb(71, 80, 71);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#try:hover {
+  background-color: black;
+}
+
+#fakeHeader {
+  height: 10%;
+  width: 100%;
+}
+
+
+#page1 {
+  width: 100%;
+}
+
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px lightgray;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-box button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+  background: #0056b3;
+}
+
+.results {
+  margin-top: 30px;
+  display: none;
+}
+
+.results h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.ride-card {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.ride-card:hover {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.ride-header {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.ride-info {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.book-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+  background: #218838;
+}
+
+.loading {
+  font-style: italic;
+  color: #555;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+
+  .ride-header,
+  .ride-info {
+    font-size: 16px;
+  }
+
+  .book-btn {
+    width: 100%;
+  }
+
+  #header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #logo {
+    width: 80px;
+  }
+}

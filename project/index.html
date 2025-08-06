@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickRideCompare</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <img src="https://sdmntprwestus3.oaiusercontent.com/files/00000000-7f7c-61fd-93a7-130d141b8ce3/raw?se=2025-08-04T14%3A06%3A33Z&sp=r&sv=2024-08-04&sr=b&scid=7cf66e4a-c4f1-5ec1-a3d7-8eeec9e523a7&skoid=f28c0102-4d9d-4950-baf0-4a8e5f6cf9d4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-04T04%3A40%3A42Z&ske=2025-08-05T04%3A40%3A42Z&sks=b&skv=2024-08-04&sig=HesuiXzuMA9/KCrT6cRqBMdYAjv%2BLvG0sdJDR5MNBEE%3D" alt="">
+      </div>
+      <div id="text"><h1>QuickRideCompare</h1></div>
+      <div id="contactdetails">
+        <p><u>Contact Us</u></p>
+        <p>0000-000-0000</p>
+      </div>
+      <div class="icon"><i class="ri-search-line"></i></div>
+      <div class="icon"><i class="ri-global-line"></i></div>
+      <div id="login"><i class="ri-user-3-fill"></i><p>Login</p></div>
+      <div id="try"><p>About Us</p></div>
+    </div>
+
+    <!-- <div id="fakeHeader"></div> -->
+
+    <div id="page1">
+      <div class="container">
+        <header>
+          <h1>🚕 QuickRideCompare</h1>
+          <p>Compare fares from Uber, Ola, and Rapido</p>
+        </header>
+
+        <form class="search-box">
+          <input type="text" placeholder="Enter Pickup Location" required />
+          <input type="text" placeholder="Enter Drop Location" required />
+          <button type="submit">Compare Fare</button>
+        </form>
+
+        <section class="results" id="ava">
+          <!-- Results will appear here dynamically -->
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
