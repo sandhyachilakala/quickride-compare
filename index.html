@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickRideCompare</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="main">
+    <header id="header">
+      <div id="logo">
+        <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-6d5c-61f7-a4c0-dd7fa019cc24/raw?se=2025-08-13T15%3A30%3A23Z&sp=r&sv=2024-08-04&sr=b&scid=c77b5e5e-0b09-565d-ab69-c137a128b1da&skoid=c953efd6-2ae8-41b4-a6d6-34b1475ac07c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-13T01%3A13%3A32Z&ske=2025-08-14T01%3A13%3A32Z&sks=b&skv=2024-08-04&sig=mgLq39BgPKex75PS/Ed5t/AU31972rXCv0yL9Q4vS6E%3D" alt="">
+        
+      </div>
+      <h1 id="h11">🚕 QuickRideCompare</h1>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" id="login"><i class="ri-user-3-fill"></i> Login</a>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="overlay">
+        <h2>🚕 Compare Uber, Ola & Rapido Fares Instantly</h2>
+        <form class="search-box">
+          <div class="input-group">
+            <i class="ri-map-pin-line"></i>
+            <input type="text" placeholder="Pickup Location" required />
+          </div>
+          <div class="input-group">
+            <i class="ri-map-pin-user-line"></i>
+            <input type="text" placeholder="Drop Location" required />
+          </div>
+          <select id="sortOption">
+            <option value="price">Sort by Price</option>
+            <option value="eta">Sort by ETA</option>
+          </select>
+          <button type="submit">Compare Fare</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="results"></section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
